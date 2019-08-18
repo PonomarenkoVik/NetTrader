@@ -7,6 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Horizontal">
+            <Menu VerticalAlignment="Center" Margin="10,0,10,0">
+                <MenuItem Header="File"  VerticalAlignment="Center">
+                    <MenuItem Header="Open workspace"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Save workspace"  VerticalAlignment="Center"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Window"  VerticalAlignment="Center">
+                    <MenuItem Header="Chart"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Watchlist"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Market depth"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Order entry"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Working orders"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Orders history"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Filled orders"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Saved orders"  VerticalAlignment="Center"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Tools"  VerticalAlignment="Center">
+                    <MenuItem Header="Strategy manager"  VerticalAlignment="Center"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="More"  VerticalAlignment="Center">
+                    <MenuItem Header="About"  VerticalAlignment="Center"></MenuItem>
+                </MenuItem>
+            </Menu>
+            <StackPanel VerticalAlignment="Center"  Margin="100,0,10,0">
+                <Menu VerticalAlignment="Center" Margin="10,0,10,0">
+                    <MenuItem Header="Assets"  VerticalAlignment="Center"></MenuItem>
+                    <MenuItem Header="Account" VerticalAlignment="Center">
+                        <MenuItem Header="Account info"  VerticalAlignment="Center"></MenuItem>
+                    </MenuItem>
+                </Menu>
+                
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Center"></StackPanel>
     </Grid>
 </Window>
